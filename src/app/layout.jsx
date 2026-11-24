@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={cn("h-full", "antialiased", poppins.variable, "font-sans")}>
-      <body className="font-sans">
+      <body className="font-sans bg-stone-100">
         <Toaster position="top-right" richColors />
         {children}
       </body>
