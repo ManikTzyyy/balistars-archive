@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div className="w-full">Welcome</div>;
+  return <div className="w-full text-stone-600">Welcome</div>;
 }
