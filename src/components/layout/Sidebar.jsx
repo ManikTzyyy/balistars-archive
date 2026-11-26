@@ -42,12 +42,12 @@ const Sidebar = () => {
       <div
         className={`${isCollapse ? "min-w-20" : "min-w-60"} ease-in-out transition-all `}></div>
       <div
-        className={`bg-white p-4 fixed h-full flex flex-col justify-between ease-in-out transition-all 
+        className={`bg-white dark:bg-stone-900 p-4 fixed h-full flex flex-col justify-between ease-in-out transition-all 
         ${isCollapse ? "min-w-20 items-center" : "min-w-60"}
         `}>
         <div>
           <div className={`pb-8 ${isCollapse && "text-center"}`}>
-            <h1 className="font-black text-lg text-stone-900">
+            <h1 className="font-black text-lg text-stone-900 dark:text-stone-100">
               {isCollapse ? "B" : "Balistars Archive"}
             </h1>
             <p className="text-xs text-stone-400">
@@ -72,7 +72,7 @@ const Sidebar = () => {
           onClick={() => {
             setIsCollapse(!isCollapse);
           }}
-          className={`flex w-full border-t border-stone-200 pt-2 items-center ${isCollapse ? "justify-center" : "justify-between"} text-stone-500`}>
+          className={`flex w-full border-t border-stone-200 pt-2 dark:border-stone-700 items-center ${isCollapse ? "justify-center" : "justify-between"} text-stone-500`}>
           <span className={`${isCollapse && "hidden"}`}>collapse</span>
           {isCollapse ? <IconChevronRightPipe /> : <IconChevronLeftPipe />}
         </button>

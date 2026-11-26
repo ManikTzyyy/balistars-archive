@@ -7,7 +7,7 @@ export default function MainLayout({ children }) {
         <Sidebar />
       <div className="w-full space-y-2.5">
         <Navbar />
-        <div className="bg-white min-h-screen p-4">{children}</div>
+        <div className="bg-white min-h-screen p-4 dark:bg-stone-900">{children}</div>
       </div>
     </div>
   );
