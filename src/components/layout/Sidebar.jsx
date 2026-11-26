@@ -72,7 +72,7 @@ const Sidebar = () => {
           onClick={() => {
             setIsCollapse(!isCollapse);
           }}
-          className={`flex w-full border-t border-stone-200 pt-2 items-center ${isCollapse ? "justify-center" : "justify-between"}`}>
+          className={`flex w-full border-t border-stone-200 pt-2 items-center ${isCollapse ? "justify-center" : "justify-between"} text-stone-500`}>
           <span className={`${isCollapse && "hidden"}`}>collapse</span>
           {isCollapse ? <IconChevronRightPipe /> : <IconChevronLeftPipe />}
         </button>
